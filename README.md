@@ -11,3 +11,6 @@ An API tester built with React.js.
     - Revert to previous calls
 - Save notes for each request
 - Customise background a bit
+
+![screenshot 1](https://i.imgur.com/xsuriFP.png)
+![screenshot 2](https://i.imgur.com/1yCOjoy.png)
