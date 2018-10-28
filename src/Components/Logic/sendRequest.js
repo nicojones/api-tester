@@ -1,7 +1,7 @@
 
 import axios from 'axios';
 
-export default function sendAndProcessRequest(request, endPoint, options, callback) {
+export default function sendRequest(request, endPoint, options, callback) {
 
   let headers = {}, rawHeaders = options.headers.split("\n");
   for (let i = 0; i < rawHeaders.length; ++i) {
@@ -13,11 +13,15 @@ export default function sendAndProcessRequest(request, endPoint, options, callba
   
   let axiosTime = performance.now();
   
+  let params;
+  try {
+    params = JSON.parse(request);
+  } catch (e) {
+    params = request;
+  }
+  
   axios[options.method](endPoint, {
-    params: {
-      results: request,
-      inc: 'name,picture,cell'
-    },
+    params: params,
     headers: headers
   })
     .then(response => {
@@ -29,8 +33,7 @@ export default function sendAndProcessRequest(request, endPoint, options, callba
       
     })
     .catch(function (error) {
-      console.log(error);
-  
+
       callback({
         response: {
           error: error,

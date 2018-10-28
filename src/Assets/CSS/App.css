@@ -30,3 +30,86 @@
     transform: rotate(360deg);
   }
 }
+
+.pointer {
+  cursor: pointer;
+}
+.pointer:hover {
+  opacity: 0.8;
+}
+.faded {
+  opacity: 0.2;
+}
+.absolute {
+  position: absolute;
+}
+.shown {
+  display: inline-block !important;
+}
+
+
+.api-error {
+  border: 1px solid #dc3545;
+  background: #fabdba;
+}
+
+.tall-30 {
+  height: 30% !important;
+}
+.tall-40 {
+  height: 40% !important;
+}
+.tall-50 {
+  height: 50% !important;
+}
+.tall-60 {
+  height: 60% !important;
+}
+.tall-70 {
+  height: 70% !important;
+}
+.tall-100 {
+  height: 100% !important;
+}
+.icon {
+  height: 1.5em;
+}
+
+#App-container {
+  height: 100%
+}
+.App-reqres-container {
+  height: 100%;
+}
+
+.App-light {
+  background: #eeeeee;
+}
+.App-dark {
+  background: #666666;
+}
+
+.modal-mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: #000;
+  opacity: 0.1;
+}
+.modal-dialog.modal-xl {
+  max-width: 1000px;
+}
+
+#settings {
+  position: fixed;
+  /*height: 100px;*/
+  border: 1px solid #666;
+  border-radius: 5px;
+  bottom: 0;
+  right: 0;
+  width: 180px;
+
+}
+#settings input {
+  width: 100px;
+}
