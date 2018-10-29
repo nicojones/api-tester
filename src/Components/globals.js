@@ -7,7 +7,7 @@ const globals = {
   appDesc: 'Test API calls',
   theme: {
     dark: {
-      background: '#666',
+      background: '#444444',
       color: '#eee'
     },
     light: {

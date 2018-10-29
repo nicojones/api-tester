@@ -109,6 +109,7 @@ class App extends Component {
             </div>
             
             <Response last={last} history={this.state.history} setHistory={this.setHistory}
+                      light={this.state.settings.light}
                       removeHistory={this.removeHistory} bookmarkHistory={this.bookmarkHistory}/>
             <Settings setSettings={this.setSettings} settings={this.state.settings}/>
           </div>
