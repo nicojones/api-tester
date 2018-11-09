@@ -1,6 +1,7 @@
 # Api Tester
 
-An API tester built with React.js. Use Cmd+Enter or Ctrl+Enter to send a request
+An API tester built with React.js. Use Cmd+Enter or Ctrl+Enter to send a request.  
+
 [Use it here](https://nicojones.github.io/api-tester/build/index.html)
 
 - Custom headers
